@@ -1,0 +1,11 @@
+import cv2
+img = cv2.imread("images.jpg")
+inverted = cv2.bitwise_not(img)
+
+plt.imshow(img)
+plt.show()
+
+plt.imshow(inverted)
+plt.show()
+cv2.imwrite('new_image2.jpg', inverted)
+
