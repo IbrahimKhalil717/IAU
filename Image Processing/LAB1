@@ -1,0 +1,12 @@
+from PIL import Image
+img = Image.open(r"C:\Users\Ibrahim\OneDrive\الصور\Saved Pictures\R.jpg")
+import matplotlib.pyplot as plt
+plt.imshow(img)
+plt.show()
+
+import numpy as np
+
+A_img = np.array(img)
+print(A_img.shape)
+print(A_img)
+img.save('new_image5.jpg')
